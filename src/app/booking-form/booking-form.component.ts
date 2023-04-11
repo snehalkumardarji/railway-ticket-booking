@@ -8,15 +8,17 @@ import { NgForm } from '@angular/forms';
 })
 export class BookingFormComponent {
   tickets: any[] = [];
-
-  onSubmit(form: NgForm) {
-    const ticket = {
-      name: form.value.name,
-      date: form.value.date,
-      from: form.value.from,
-      to: form.value.to
-    };
-    this.tickets.push(ticket);
-    form.reset();
+  name!:string;
+  email!: string;
+  pnum!:number;
+  date!:string;
+  from!:string;
+  to!: string;
+  addTicket() {
+    this.tickets.push({id:this.tickets.length,name:this.name,email:this.email,pnum:this.pnum,date:this.date,from:this.from,to:this.to});
+    // form.reset();
+  }
+  cancleTicket(id:number) {
+    this.tickets = this.tickets.filter(item=>item.id!=id);
   }
 }

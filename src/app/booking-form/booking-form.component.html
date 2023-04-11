@@ -1,16 +1,25 @@
 <h2>Book a Ticket</h2>
-<form>
+<div>
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name">
+  <input type="text" id="name" name="name" [(ngModel)]="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="email">
+
+  <label for="name">Phone Number:</label>
+  <input type="number" id="pnum" name="pnum" [(ngModel)]="pnum">
 
   <label for="date">Date:</label>
-  <input type="date" id="date" name="date">
+  <input type="date" id="date" name="date" [(ngModel)]="date">
 
   <label for="from">From:</label>
-  <input type="text" id="from" name="from">
-
+  <input type="text" id="from" name="from" [(ngModel)]="from">
+  <br>
   <label for="to">To:</label>
-  <input type="text" id="to" name="to">
+  <input type="text" id="to" name="to" [(ngModel)]="to">
 
-  <button type="submit">Book</button>
-</form>
+  <button type="submit" (click)="addTicket()">Book</button>
+</div>
+  <ul *ngFor="let item of tickets">
+    <li>Name :- {{item.name}} <br> Date :- {{item.date}} <br> From :- {{item.from}} <br> To :- {{item.to}} <br> <button type="submit" (click)="cancleTicket(item.id)">Cancle Ticket</button></li>
+</ul>

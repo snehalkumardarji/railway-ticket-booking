@@ -1,4 +1,17 @@
-<h1>Local Train Ticketing Systum</h1>
-<app-navbar></app-navbar>
+<h1>Local Train Ticketing System</h1>
+<!-- <app-navbar></app-navbar> -->
+<nav>
+    <ul>
+      <li><a routerLink="about-us" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="user-profile" routerLinkActive="active">Profile</a></li>
+      <li><a routerLink="booking-form" routerLinkActive="active">Book a Ticket</a></li>
+      <li><a routerLink="booking-list" routerLinkActive="active">Booking History</a></li>
+      <li><a routerLink="cancle-ticket" routerLinkActive="active">Cancel Ticket</a></li>
+      <li><a routerLink="customer" routerLinkActive="active">Customer Support</a></li>
+    </ul>
+  </nav>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 <!-- <app-book-aticket></app-book-aticket> -->
 <!-- <router-outlet></router-outlet> -->

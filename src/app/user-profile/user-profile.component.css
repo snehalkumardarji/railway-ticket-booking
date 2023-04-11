@@ -1,11 +1,16 @@
+
 /* Set the font family and font size for the entire form */
 div {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    margin: 5px;
+    /* text-align: center; */
   }
-  
+  h1 {
+    text-align: center;
+  }
   /* Style the input fields */
-  input[type=text], input[type=date], input[type=email],input[type=number] {
+  input[type=text], input[type=date], input[type=email],input[type=tel] {
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -26,21 +31,3 @@ div {
   button[type=submit]:hover {
     background-color: #45a049;
   }
-  
-  /* Style the table */
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 8px;
-  }
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-h2,form,div {
-    text-align: center;
-}  

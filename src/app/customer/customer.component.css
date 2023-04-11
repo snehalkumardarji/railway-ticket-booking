@@ -1,0 +1,14 @@
+.container {
+    margin: 50px auto;
+    width: 80%;
+    text-align: justify;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  a {
+    color: blue;
+  }
+  
