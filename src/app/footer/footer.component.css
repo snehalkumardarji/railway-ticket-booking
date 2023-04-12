@@ -3,6 +3,9 @@ footer {
     color: white;
     padding: 40px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
     }
     
     .container-fluid {

@@ -12,6 +12,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CancleTicketComponent } from './cancle-ticket/cancle-ticket.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { PaymentComponent } from './payment/payment.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     AboutUsComponent,
     CustomerComponent,
     CancleTicketComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PaymentComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
